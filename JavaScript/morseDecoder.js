@@ -1,3 +1,6 @@
+//Challenge from Codewars
+//Answer by Eleanor
+
 decodeMorse = function(morseCode){
     return morseCode.split("   ")
         .map((morseWord) => morseWord.split(" ")

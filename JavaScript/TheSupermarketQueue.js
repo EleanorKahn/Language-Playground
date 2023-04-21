@@ -1,3 +1,6 @@
+//Challenge from Codewars
+//Answer by Eleanor
+
 function queueTime(customers, n) {
   if (customers.length < 1) {
     return 0;

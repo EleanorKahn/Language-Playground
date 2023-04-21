@@ -1,5 +1,5 @@
-//CodeWars Kata PaginationHelper
-
+//Challenge from Codewars
+//Answer by Eleanor
 
 class PaginationHelper {
 	constructor(collection, itemsPerPage) {

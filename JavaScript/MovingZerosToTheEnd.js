@@ -1,3 +1,6 @@
+//Challenge from Codewars
+//Answer by Eleanor
+
 function moveZeros(arr) {
     //the return val of the sort callbackfn determines how the array is sorted
     //if the return val is zero, the sort method keeps the order the same
