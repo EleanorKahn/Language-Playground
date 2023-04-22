@@ -17,7 +17,7 @@ const defaultUser: User = {
   id: 2,
   firstName: "Eleanor",
   lastName: "Kahn",
-//   isAdmin: false
+  isAdmin: false
 };
 
 const getUserId = (user: User) => {
