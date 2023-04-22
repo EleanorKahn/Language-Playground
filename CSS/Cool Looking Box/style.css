@@ -1,0 +1,26 @@
+html {
+    font-family: sans-serif;
+}
+  
+  /* Your CSS below here. Need to apply gradients and calculate using rems. Need to center the box on the page*/
+
+div {
+    width: 200px;
+    height: 150px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px midnightblue;
+    border: 1px solid rgb(19, 78, 187);
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px black, inset 4px 3px rgba(245, 245, 245, .25), inset -4px -3px rgba(0, 0, 0, .25);
+    font-size: 1.125rem;
+    line-height: 6;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, transparent, 15%, rgba(0, 0, 0, 0.2));
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
