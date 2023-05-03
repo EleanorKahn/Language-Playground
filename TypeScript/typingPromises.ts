@@ -1,3 +1,6 @@
+//Challenge from Totally Typescript
+//Answer by Eleanor
+
 interface LukeSkywalker {
     name: string;
     height: string;
