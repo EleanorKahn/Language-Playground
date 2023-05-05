@@ -1,6 +1,5 @@
-// import { expect, it } from "vitest";
-
-
+//Challenge from Totally Typescript
+//Answer by Eleanor
 
 const createCache = () => {
     const cache: Record<string, string> = {};
