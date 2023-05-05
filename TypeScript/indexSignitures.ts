@@ -19,10 +19,3 @@ const remove = (id: string) => {
   };
 };
 
-// it("Should add values to the cache", () => {
-//   const cache = createCache();
-
-  cache.add("123", "Matt");
-
-//   expect(cache.cache["123"]).toEqual("Matt");
-// });
