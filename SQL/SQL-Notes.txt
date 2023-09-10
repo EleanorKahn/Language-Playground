@@ -1,0 +1,8 @@
+Overview: SQL (Structured Query Language) is a language for storing, acessing, manipulating, and retrieving data. 
+
+What can it do?
+- CRUD operations in a database for views, tables, and records
+- can execute queries against a database
+- can set permissions for tables/procedures/views
+- can retrieve data from a database 
+- can insert records in a database 
