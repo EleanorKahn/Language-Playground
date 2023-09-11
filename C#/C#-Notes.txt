@@ -35,3 +35,36 @@ NB
 - C# is case-sentisitive. 
 - Every line must end with a semicolon.
 - The name of the C# file doesn't have to match classname (unlike Java), but they often do. 
+
+
+Write vs WriteLine method: WriteLine() will insert a new line after the call, and the Write() method will not. 
+
+You can use Write() or WriteLine() like .log in JS, in the sense that it can do calculations as well as just print strings/arrays/objects, etc to the console.
+
+
+C# Variables:
+
+variable types:
+- int (stores whole numbers)
+- double (stores floating point numbers with 2 decimal places, it seems)
+- char (stores single character, surrounded by single quotes)
+- string (stores text, "surrounded by double quotes")
+- bool (boolean)
+
+Declaring variable syntax:
+type variableName = value;
+
+You can also declare a variable without assigning it a value, and assign a value to it later!
+
+To make a constant variable, you insert const in front of the type of your variable. This results in a read only variable.
+
+You can also declare multiple variables of the same type at the same time, as comma separated values. 
+ex: int x = 5, y = 3, z = 13;
+to assign mutliple variables to the same value:
+int x, y, z;
+x = y = z = 50;
+
+
+C# Identifiers 
+
+All C# variables must have unique names, which are called identifiers (this makes complete sense).
