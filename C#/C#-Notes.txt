@@ -1,2 +1,37 @@
 Overview:
 C# is an OOP language created by Microsoft. It runs on the .NET framework. The first version was released in 2002. It is similar to Java, and has roots in the C family of languages.
+
+
+C# Syntax:
+
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+"using System" - means we can use classes from the "System" namespace. 
+
+What is a Namespace? According to Microsoft, the namespace keyword is used to declare a scope that contains a set of related objects. Namespaces organize and provide a level of separation of code. Programiz states that they can be considered as a container which consists of other namespaces. A namespace keeps one set of names separate from another. W3 says that a namespace is used to organize your code, and it is a container for classes and other namespaces. 
+
+C# ignores whitespace, but multiple lines are good for readability. 
+
+Curly braces mark the beginning and end of a block of code.
+
+Every line of C# must be inside a class (in this case, the name of the class is Program).
+
+Every C# program has a Main method, and the code inside it's {} will be executed.
+
+Console is a class in the System namespace, which has a WriteLine() method used to output/print text. Without the "using" keyword (which seems to be kind of like import?) you would have to write System.Console.WriteLine();
+
+NB 
+- C# is case-sentisitive. 
+- Every line must end with a semicolon.
+- The name of the C# file doesn't have to match classname (unlike Java), but they often do. 
