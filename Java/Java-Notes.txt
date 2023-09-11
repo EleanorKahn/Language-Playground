@@ -1,0 +1,32 @@
+History:
+Java was created in 1995, and is currently owned by Oracle. 
+
+Java is close to C++ and C#, which is useful for programmers who use all 3. 
+
+Java is case-sensitive.
+
+Java code statements must end with a semicolon;
+
+You may have to install Java on your device. 
+
+
+Java Fundamentals:
+
+In Java, every app begins with a class name which must match the filename. 
+
+Java Syntax:
+example:
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello Word");
+    }
+}
+
+EVERY line of Java must be inside a class (our class is called Main), and the name of the java file MUST match the class name. 
+
+The main() Method:
+main() method is required in every Java program. 
+public static void main(String[] args)
+where any code inside the main() method gets executed. 
+
+System.out.println() will print whatever you put inside the parantheses to the screen. 
