@@ -30,3 +30,7 @@ public static void main(String[] args)
 where any code inside the main() method gets executed. 
 
 System.out.println() will print whatever you put inside the parantheses to the screen. 
+
+
+Java Output / Print 
+The println() method 
