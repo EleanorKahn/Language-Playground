@@ -6,3 +6,123 @@ What can it do?
 - can set permissions for tables/procedures/views
 - can retrieve data from a database 
 - can insert records in a database 
+
+SQL Syntax:
+
+Database Tables
+
+databases often have at least one table, which are each identified by a name. Each row represents a record of a data point (rows are called records; ex - Fred is a record in the customers table).
+
+NB: 
+- SQL keywords are NOT case sensitive, but seem to be often written in upper case.
+- Some db systems require semicolons at the end of each SQL statement, and some don't, so it seems to be a good practice to always end your SQL statements with semicolons.
+
+SQL Statements:
+SELECT - extracts data 
+UPDATE - updates data INSERT INTO - adds new data
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database 
+CREATE TABLE - creates new table
+ALTER TABLE - modifies table 
+DROP TABLE - deletes table
+CREATE INDEX - creates new index (which is a search key)
+DROP INDEX - deletes index
+
+The SQL SELECT Statement is used to select data from a database. This returned data is then stored in a result table aka result-set.
+
+Syntax: 
+SELECT column1, column2, ...
+FROM table_name;
+
+where col1 and col2 are field names of the table from which you are selecting data.
+
+To get all data froma table:
+
+SELECT * FROM table_name;
+
+
+The SQL SELECT DISTINCT Statement
+
+The SELECT DISTINCT statement is used to retrieve only distinct (aka different/unique) values. It is useful in a situation where repeat values are not helpful. For example, when referring to a table of the addresses of a bunch of people from differet states, if you want to know from which states the people in the table are from, you don't want a result that has Oregon, Oregon, Oregon, California, etc. You want to have a table that contains only distinct US State values. 
+
+SELECT DISTINCT Syntax:
+SELECT DISTINCT col1, col2, ...
+FROM table_name;
+
+Ex: to get a count of the distinct num of states people are from, you would use:
+SELECT COUNT(DISTINCT State) FROM Customers;
+
+Note that this doesn't work in Firefox because COUNT(DISTINCT col_name) isn't supported by microsoft. W3 has workaround.
+
+
+The SQL WHERE Clause 
+
+The WHERE clause is used to filter records, so that only those that fulfill the specified condition are extracted. 
+
+WHERE Syntax:
+SELECT col1, col2,...
+FROM table_name
+WHERE condition;
+
+The WHERE clause can be used in SELECT, UPDATE, DELETE, and others.
+
+For example, if you want all the customers from a certain table who live in Mexico, it would look like this:
+
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+If you are trying to access a text field, you must put single quotes around text values (most db systems also allow double quotes, but maybe better to just always do single). Numeric fields should not be in quotes. 
+
+Operators in WHERE Clause
+all the equal, greater/less than are available here. 
+<> which means not equal (sometimes written as !=)
+BETWEEN which is between certain numbers/within a certain range
+LIKE which is to search for a pattern
+IN which specifies multiple possible vals for a col. 
+NOT which can be used to exclude values (WHERE NOT City = 'Berlin';)
+
+
+
+The SQL ORDER BY Keyword
+The ORDER BY keyword sorts the result-set (ie what the SELECT returned) in asending or descending order. Default order is ascending, use DESC to sort by descending order. The ascending or descending determination will come at the end of that statement.
+
+ORDER BY Syntax:
+SELECT col1, col2, ...
+FROM table_name
+ORDER BY col1, col2, ... ASC|DESC;
+
+NB - When you have mutliple values after order by, separated by commas, it means that if the value in the first row is the same, use the second value to sort. You can also have SQL sort the values separated by commas in different order, ie ORDER BY Country ASC, CustomerName DESC;
+
+
+
+The SQL INSERT INTO Statement:
+
+The SQL INSERT INTO Statement inserts a new record(s) into a table. 
+
+INSERT INTO Syntax:
+2 Ways - 
+
+1. specify both col names and the values to be inserted
+ex:
+INSERT INTO table_name (col1, col2, col3, ...) VALUES (val1, val2, val3, ...);
+
+2. You don't need to specify col names if you're adding vals for all cols of a table. Just make sure the order of the vals to be inserted matches the order of the cols in the table. 
+ex:
+INSERT INTO table_name VALUES (val1, val2, val3, ...);
+
+Example: 
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom', 'Skagen 21', 'Stavanger', '4002', 'Norway');
+
+Is the id field always auto-incremented? 
+
+If you want to insert data only into specific cols, you use the following syntax:
+INSERT INTO Customers (specific, colNames, here) VALUES ('values', 'to', 'insert');
+
+If you want to insert multiple records into a table (ie rows), you can do so like this:
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES
+('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),
+('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),
+('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');
+

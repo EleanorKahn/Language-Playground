@@ -12,3 +12,15 @@ CUSTOMERS Table
 +----+----------+-----+-----------+----------+
 
 SELECT * FROM Customers;
+
+SELECT NAME FROM Customers;
+
+SELECT DISTINCT ADDRESS FROM Customers;
+
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+SELECT * FROM Customers
+ORDER BY AGE;
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom', 'Skagen 21', 'Stavanger', '4002', 'Norway');
