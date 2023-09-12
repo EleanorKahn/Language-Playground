@@ -149,3 +149,20 @@ int[] myNumber = {10, 20, 30};
 
 You can access the elements in an array with square bracket notation: myNumber[0] = 10;
 To change the value of an element, you can simply reassign it: cars[0] = cars5;
+
+
+C# OOP:
+
+What is OOP? 
+- OOP stands for Object-Oriented Programming (contrasted by Procedural or Functional programming). 
+
+OOP Advantages:
+- faster and easier to execute
+- provides clear structure for programs 
+- DRY -> Don't Repeat Yourself, OOP is reusable, and easier to maintain/change/debug
+- OOP can use less code and has a shorter development time. 
+
+C# - What are Classes and Objects?
+Classes are to objects, what fruit is to bananas, apples, and pears. More specifically:
+
+A CLASS is a TEMPLATE for OBJECTS, and an OBJECT is an INSTANCE of a CLASS. 
