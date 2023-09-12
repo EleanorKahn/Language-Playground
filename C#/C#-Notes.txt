@@ -68,3 +68,78 @@ x = y = z = 50;
 C# Identifiers 
 
 All C# variables must have unique names, which are called identifiers (this makes complete sense).
+
+
+
+C# Strings
+As in JS, strings in C# are objects, and have properties and methods. 
+
+to get the length of the string, access the string.Length property.
+
+Strings can be made upper/lowercase with the string.ToUpper() and string.ToLower() methods. These return a copy of the original string.
+
+The + operator can be used to concat strings. You can also use the string.Concat() method.
+
+NB - the + operator can be either addition or concat. Strings are concat, and numbers are added.
+
+Like string literals, you can perform string interpolation by using the $ sign. ex: string name = $"My full name is: {firstName} {lastName}";
+
+To access a specific char in a string, you can use square brackets with the index of that char. ex: string name = "Pete"; name[2] would return t. You can also use the IndexOf() method, which will return a number indicating the index of a given char. 
+
+string.Substring(specifiedIndexToStart) returns a new substring starting from a specified index.
+
+Note - to include special characters in strings, you must escape them using a \ before the character.
+
+
+Collections in C#:
+Collection classes are special classes for storing and retrieving data. Interesting - it looks like you use the same "using" syntax as with System, except that it looks like "using System.Collections;"
+
+
+ArrayList: represents an ordered collection of objects that can be indexed. You can add and remove items from a list at specified positions using index, and the arraylist will resize automatically (unlike arrays). Also allows dynamic memory allocation, searching, sorting items in the list. can use .Sort() method. To add to an arraylist: ArrayList al = new ArrayList(); al.Add(2); adds the number 2 to our new arraylist al.
+
+HashTable:
+HashTable is a class. Represents a collection of data by key value pairs, and the key is used to access that value. 
+
+ex:
+Hashtable ht = new Hashtable();
+
+ht.Add("001", "Fred Jones");
+ht.Add("002", "Rebecca Smith");
+
+to check if a HashTable contains a value, use the ht.ContainsValue("value") method.
+
+To get a collection of just the keys of a HashTable, use the ICollection key = ht.Keys; property. ICollection is the type of this variable?
+
+
+Stacks:
+last-in-first-out principal, like loading/unloading a car. 
+
+ex: Stack stack = new Stack();
+
+stack.Push("A");
+stack.Push("B");
+
+The Push() method adds values to the front of the stack. 
+
+stack.Pop(); removes values from the front of an array. 
+
+Queue:
+A queue represents a first-in-first-out, exactly like a line in a grocery store. 
+
+Queue q = new Queue();
+q.Enqueue("A");
+q.Enqueue("B");
+
+//This one is worth looking up
+char ch = (char)q.Dequeue(); 
+
+Arrays in C#:
+type[] name;
+example: string[] cars;
+
+string[] cars = {"car1", "car2", "car3"};
+
+int[] myNumber = {10, 20, 30};
+
+You can access the elements in an array with square bracket notation: myNumber[0] = 10;
+To change the value of an element, you can simply reassign it: cars[0] = cars5;
