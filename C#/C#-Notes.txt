@@ -88,6 +88,12 @@ To access a specific char in a string, you can use square brackets with the inde
 
 string.Substring(specifiedIndexToStart) returns a new substring starting from a specified index.
 
+To check if a string contains a string, you can use the string.Contains("keywordToLookFor") method.
+
+To compare strings, you can use the string.Compare(str1, str2) method. I'm not exactly sure what this compares by though, except equality. 
+
+To join strings, you can use the string.Join(str1, str2) method.
+
 Note - to include special characters in strings, you must escape them using a \ before the character.
 
 
