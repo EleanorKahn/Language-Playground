@@ -67,3 +67,46 @@ to assign same time variables to the same value, you can use the following synta
 int x, y, z;
 x = y = z = 50;
 
+
+Java Identifiers:
+All Java variables must be identified with unique names, and these unique names are called identifiers. 
+
+
+Java Data Types:
+primative types include:
+- byte
+- short
+- int
+- long 
+- float 
+- double 
+- boolean 
+- char
+
+non-primitive types include:
+- String, Arrays, and Classes (okay, so looks like non-primitive types get their names capitalized).
+
+
+Java Strings:
+
+Strings contain a collection of characters surrounded by double quotes.
+
+To make a string all upper or lower case, you can use the .toUpperCase() or toLowerCase() methods respectively. 
+
+To find a character in a string, you can use the .indexOf("string") method, which will return an int which represents the position of the first occurence of that specified text.
+
+You can use the + operator to combine strings, and you can also use the str1.concat(str2) method. If you use the + operator to concat a number and a string, the result will be a number! Like C#, you use the \ to escape characters you want to use in a string (escape characters).
+
+str.charAt(number) returns the char at the index represented by the number.
+
+str.compareTo(str2) compares two strings lexicographically (ie the order in which they appear in the dictionary)
+
+str.contains(str2) returns a boolean.
+
+str.equals(str2) returns a boolean, and str.equalsIgnoreCase(str2) does the same but without case considerations.
+
+
+
+
+Random: 
+- methods used to obtain info about an object are called accessor methods (think str.length())
