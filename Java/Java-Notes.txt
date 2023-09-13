@@ -34,3 +34,36 @@ System.out.println() will print whatever you put inside the parantheses to the s
 
 Java Output / Print 
 The println() method 
+
+The System.out.println() method will print values or text, and will also add a new line for each method call. System.out.print() will NOT add a new line, but works otherwise the same. If you include text inside (as opposed to a string variable) it must be wrapped in double quotes. You can also perform mathmatical calculations inside the the println() method.
+
+
+Comments in Java:
+
+Comments in Java seem to work exactly how they do in JS, which is helpful. It also seems like C# comments are identical. 
+
+
+Variables in Java
+variable types:
+- String (surrounded by DOUBLE QUOTES)
+- int (whole numbers)
+- float (stores floating point numbers, with decimals, maybe just 2, although I doubt it?)
+- char (single characters, surrounded by SINGLE QUOTES)
+- boolean 
+
+to declare a variable, you specify type and assign it a value.
+ex: type variableName = value;
+
+NB - String seems to be the only type of variable whose type name is capitalized. 
+
+variables can be reassigned by default, and if you find that you want a read-only variable, you use the "final" keyword.
+ex: final int myNum = 14;
+myNum will always equal 14.
+
+You can declare multiple variables of the same type at the same time using the following syntax:
+int x = 5, y = 6, z = 50;
+
+to assign same time variables to the same value, you can use the following syntax:
+int x, y, z;
+x = y = z = 50;
+
