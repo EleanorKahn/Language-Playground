@@ -110,3 +110,30 @@ str.equals(str2) returns a boolean, and str.equalsIgnoreCase(str2) does the same
 
 Random: 
 - methods used to obtain info about an object are called accessor methods (think str.length())
+
+
+
+Java methods:
+a method is a block of code that only runs when called. You can pass data (parameters) into a method. Methods perform actions, and are aka functions. Methods are kind of a DRY thing. 
+
+A method MUST be declared within a CLASS.
+ex: 
+public class Main {
+    static void myMethod() {
+}
+}
+myMethod() is the name of the method, static means that the method belongs to the Main class and not an object of the Main class. void means the method doesn't have a return value. 
+
+To call a method, you use two parens and a semicolon. method();
+
+Parameters vs Arguments: when a parameter is passed to the method, it is called an argument. So when you actually call a method, you don't pass in parameters, you pass in arguments. When you declare a method, the parameters are typed.
+example:
+static void myMethod(String names) {
+
+}
+
+the void keyword means the method doesn't return anything. If the int keyword is used, it means the method is returning an int, and you'll see the return keyword used inside the method.
+
+
+Method Overloading
+When multiple methods have the same name with different parameters.
