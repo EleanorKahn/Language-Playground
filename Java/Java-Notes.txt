@@ -137,3 +137,27 @@ the void keyword means the method doesn't return anything. If the int keyword is
 
 Method Overloading
 When multiple methods have the same name with different parameters.
+
+
+Java OOP 
+
+OOP Advantages
+- faster and easier to execute
+- provides clear structure for programs 
+- DRY -> Don't Repeat Yourself, OOP is reusable, and easier to maintain/change/debug
+- OOP can use less code and has a shorter development time. 
+
+
+Java class attributes:
+Class ATTRIBUTES are VARIABLES WITHIN a CLASS. Another term for class attributes is fields. It seems like these are like properties in JS? Attribute values can be modified. 
+
+To make sure no one can override existing values, you can declare the attribute as "final". ex: final int x = 10;
+
+
+Java Class Methods:
+Methods are declared within a class and are used to perform certain actions. 
+
+Static vs Public keywords:
+a static method can be accessed without creating an object of the class, whereas public methods can only be accessed by objects. 
+
+
