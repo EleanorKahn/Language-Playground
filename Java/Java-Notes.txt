@@ -161,3 +161,19 @@ Static vs Public keywords:
 a static method can be accessed without creating an object of the class, whereas public methods can only be accessed by objects. 
 
 
+Java Constructors
+Constructors are special methods used to initialize objects. It is called when an instance of a class is created. It can be used to set that object's initial values. 
+
+The constructure name must match the class name, and it cannot have a return type. 
+
+Constructors can take parameters, which are used to initialize attributes. 
+
+Java Modifiers:
+ex - in public class Main, public acts as an access modifier, and is used to set the level of access for classes, attributes, methods, and constructors. 
+
+Access modifiers control the access level
+Non-Access modifiers provide other functionality
+
+In Java classes, the final keyword is a class non-access modifier that means that the class cannot be inherited by other classes. In the case of attributes and methods, the final keyword means that attributes and methods cannot be overriden or modified. 
+
+The static keyword means that attributes and methods belong to the class, rather than an object (does this mean an instance of the object?)
